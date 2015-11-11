@@ -8,5 +8,6 @@ or link them into your `$ZSH_CUSTOM` dir.
 `cd` to this dir, then:
 
 ```sh
-for file in *.zsh; do ln -s $file $ZSH_CUSTOM/$file; done
+# Or use `realpath` on OSX
+for file in *.zsh; do ln -s `readlink -f $file` $ZSH_CUSTOM/$file; done
 ```
