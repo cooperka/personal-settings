@@ -5,16 +5,10 @@ export DATE_FORMAT=$(date +%Y-%m-%d-%H-%M-%S)
 rc() {
   nano $ZSH_CUSTOM/$1.zsh
 }
-alias rc=rc
 alias rezsh='for f in $ZSH_CUSTOM/*.zsh; do echo "Loading $f"; . $f; done'
 lzsh() {
   less $ZSH_CUSTOM/$1.zsh
 }
-alias lzsh=lzsh
-lzshg() {
-  lzsh $1 | shift & grep $@
-}
-alias lzshg=lzshg
 
 # Memory jogs
 alias lines='echo "cat -n FILE"'

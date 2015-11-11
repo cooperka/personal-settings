@@ -2,7 +2,6 @@
 diffs() {
   git log $1..origin/master --author=kcooper
 }
-alias diffs=diffs
 alias gh='git help'
 alias gl='git log'
 alias glp='git log -p'
@@ -39,7 +38,6 @@ grhhdir() {
   # grhh for each subdirectory
   ls -d */ | awk '{print $NF}' | xargs -n1 sh -c 'cd $0 && pwd && git reset HEAD --hard'
 }
-alias grhhdir=grhhdir
 alias grt='git revert'
 alias grb='git rebase'
 alias grbm='git rebase master'
@@ -51,6 +49,8 @@ alias gcpc='gcp --continue'
 alias gcpa='gcp --abort'
 alias grm='git remote'
 alias gbs='git bisect'
+alias gsm='git submodule'
+alias gsmu='git submodule update'
 alias gplkc='git pull kc HEAD'
 alias gpskc='git push -f kc HEAD'
 gcof() {
@@ -59,14 +59,12 @@ gcof() {
     git checkout -B $1 origin/$1
   fi
 }
-alias gcof=gcof
 pushtag() {
   if [ $1 ]; then
     git tag $1
     git push origin $1
   fi
 }
-alias pushtag=pushtag
 
 # Memory jogs
 alias upstream='echo "git branch --set-upstream branchName origin/branchName OR git branch -u origin/branchName OR git push -u origin branchName"'
