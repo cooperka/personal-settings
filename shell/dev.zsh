@@ -1,5 +1,23 @@
+# Echo to stderr.
+echoerr() {
+  cat <<< "$@" 1>&2
+}
+alias err=echoerr
+
+# Add a dir to the path (if it exists and isn't already added).
+addpath() {
+  if [ -d "$1" ]; then
+    if [[ ":$PATH:" != *":$1:"* ]]; then
+      PATH="${PATH:+"$PATH:"}$1"
+    fi
+  else
+    err "Not a directory: $1"
+  fi
+}
+
 # Exports
-export PATH=$PATH:~/Dev/adt-bundle-mac/sdk/platform-tools:~/Dev/adt-bundle-mac/sdk/tools
+addpath ~/Dev/adt-bundle-mac/sdk/platform-tools
+addpath ~/Dev/adt-bundle-mac/sdk/tools
 export ANDROID_HOME=/Users/kcooper/Dev/adt-bundle-mac/sdk
 
 # Misc.
@@ -9,6 +27,10 @@ alias nup='npm update'
 alias ynup='ynpm update'
 alias nli='npm list'
 alias ynli='ynpm list'
+alias nst='npm start'
+alias ynst'ynpm start'
+alias nt='npm test'
+alias ynt='ynpm test'
 
 # Android
 alias pic="adb -e shell screencap -p | perl -pe 's/\x0D\x0A/\x0A/g' > ~/Pictures/ss-emulator/ss_$DATE_FORMAT.png"
