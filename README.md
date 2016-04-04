@@ -2,7 +2,7 @@
 
 Various personal settings. Better VCS than Google Drive!
 
-For people who aren't me, the [shell aliases](https://github.com/cooperka/personal-settings/tree/master/shell) will likely be the only useful things here. I recommend taking a look.
+For people who aren't me, the [shell aliases](https://github.com/cooperka/personal-settings/tree/master/shell) will likely be the only useful things here. I recommend taking a look; there is a separate README there with more details.
 
 ## Usage
 
