@@ -5,6 +5,7 @@ diffs() {
 alias gh='git help'
 alias gl='git log'
 alias glp='git log -p'
+alias grl='git reflog'
 alias gcob='git branch; git checkout -b'
 alias gcm='git checkout master'
 alias gcs='git checkout stable'
