@@ -28,7 +28,7 @@ alias ynup='ynpm update'
 alias nli='npm list'
 alias ynli='ynpm list'
 alias nst='npm start'
-alias ynst'ynpm start'
+alias ynst='ynpm start'
 alias nt='npm test'
 alias ynt='ynpm test'
 
