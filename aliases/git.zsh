@@ -2,18 +2,23 @@
 diffs() {
   git log $1..origin/master --author=kcooper
 }
+alias g='git'
+alias gst='git status'
 alias gh='git help'
 alias gl='git log'
 alias glp='git log -p'
 alias grl='git reflog'
+alias gco='git checkout'
 alias gcob='git branch; git checkout -b'
 alias gcm='git checkout master'
 alias gcs='git checkout stable'
 alias gcd='git checkout dev'
 alias gcdv='git checkout development'
 alias gcdf='git checkout dogfood'
+alias gcl='git clone --recursive'
 alias ga='git add'
 alias gaa='git add .; git add -u; git status'
+alias gc='git commit'
 alias gp='echo "gps: git push, gpl: git pull"'
 alias gps='git push'
 alias gpso='git push origin'
