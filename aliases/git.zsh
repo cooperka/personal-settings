@@ -18,7 +18,7 @@ alias gcdf='git checkout dogfood'
 alias gcl='git clone --recursive'
 alias ga='git add'
 alias gaa='git add .; git add -u; git status'
-alias gc='git commit'
+alias gc='git commit -v'
 alias gp='echo "gps: git push, gpl: git pull"'
 alias gps='git push'
 alias gpso='git push origin'
@@ -37,6 +37,7 @@ alias gsts='git stash save'
 alias gstp='git stash pop'
 alias grs='git reset'
 alias grsh='git reset HEAD'
+alias grhh='git reset HEAD --hard'
 alias grsh1='git reset HEAD^'
 alias grhs1='grsh1'
 alias grsm='git reset --hard origin/master'
@@ -49,6 +50,8 @@ alias grb='git rebase'
 alias grbm='git rebase master'
 alias grbd='git rebase dev'
 alias grbdv='git rebase development'
+alias grbc='git rebase --continue'
+alias grba='git rebase --abort'
 alias gcp='git cherry-pick'
 alias gcpm='gcp -m 1'
 alias gcpc='gcp --continue'
@@ -59,6 +62,7 @@ alias gt='git tag'
 alias gbs='git bisect'
 alias gsm='git submodule'
 alias gsmu='git submodule update'
+alias gcl='git clone --recursive'
 alias gplkc='git pull kc HEAD'
 alias gpskc='git push -f kc HEAD'
 gcof() {
@@ -70,7 +74,7 @@ gcof() {
 pushtag() {
   if [ $1 ]; then
     git tag $1
-    git push origin $1
+    git push origin tags/$1
   fi
 }
 

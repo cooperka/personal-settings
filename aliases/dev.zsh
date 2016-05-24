@@ -18,6 +18,7 @@ addpath() {
 # Exports
 addpath ~/Dev/adt-bundle-mac/sdk/platform-tools
 addpath ~/Dev/adt-bundle-mac/sdk/tools
+addpath ~/Dev/solr-6.0.0/bin
 export ANDROID_HOME=/Users/kcooper/Dev/adt-bundle-mac/sdk
 
 # Misc.
