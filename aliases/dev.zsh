@@ -23,6 +23,8 @@ export ANDROID_HOME=/Users/kcooper/Dev/adt-bundle-mac/sdk
 
 # Misc.
 alias ni='npm i'
+alias nis='npm i --save'
+alias nisd='npm i --save-dev'
 alias yni='ynpm i'
 alias nup='npm update'
 alias ynup='ynpm update'
@@ -34,11 +36,11 @@ alias nt='npm test'
 alias ynt='ynpm test'
 
 # Android
-alias pic="adb -e shell screencap -p | perl -pe 's/\x0D\x0A/\x0A/g' > ~/Pictures/ss-emulator/ss_$DATE_FORMAT.png"
+alias pic="adb -e shell screencap -p | perl -pe 's/\x0D\x0A/\x0A/g' > ~/Pictures/ss-emulator/ss_${DATE_FORMAT}.png"
 alias pics='adb -d pull /sdcard/Pictures/Screenshots/ ~/Pictures/ss-device'
 alias records='adb -d pull /sdcard/media/ ~/Pictures/record-device'
-alias record='adb -d shell screenrecord "/sdcard/media/screenrecord $DATE_FORMAT.mp4"'
-alias recorde='adb -e shell screenrecord "/sdcard/media/screenrecord $DATE_FORMAT.mp4"'
+alias record='adb -d shell screenrecord "/sdcard/media/screenrecord ${DATE_FORMAT}.mp4"'
+alias recorde='adb -e shell screenrecord "/sdcard/media/screenrecord ${DATE_FORMAT}.mp4"'
 stop() {
   if [ $# -eq 2 ]; then
     adb $1 shell am force-stop $2
@@ -69,7 +71,7 @@ single() {
   gr test --tests="*.$1Test"
 }
 alias pkj='pkill java; gradle --stop'
-alias pkjm=''
+alias pkjm='' # pjk maybe (wrapper to toggle killing or not)
 
 # Repo
 alias rs='repo sync'

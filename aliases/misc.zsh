@@ -3,11 +3,11 @@ export DATE_FORMAT=$(date +%Y-%m-%d-%H-%M-%S)
 
 # Personal preferences
 rc() {
-  nano $ZSH_CUSTOM/$1.zsh
+  nano ${ZSH_CUSTOM}/$1.zsh
 }
-alias rezsh='for f in $ZSH_CUSTOM/*.zsh; do echo "Loading $f"; . $f; done'
+alias rezsh='for f in ${ZSH_CUSTOM}/*.zsh; do echo "Loading ${f}"; source ${f}; done'
 lzsh() {
-  less $ZSH_CUSTOM/$1.zsh
+  less ${ZSH_CUSTOM}/$1.zsh
 }
 
 # Memory jogs
