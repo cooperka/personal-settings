@@ -1,0 +1,132 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by file type specific settings.
+{
+	// Columns in which to display vertical rulers
+	"rulers": [],
+
+	// Set to true to turn spell checking on by default
+	"spell_check": false,
+
+	// The number of spaces a tab is considered equal to
+	"tab_size": 4,
+
+	// Set to true to insert spaces when tab is pressed
+	"translate_tabs_to_spaces": false,
+
+	// Set to false to disable detection of tabs vs. spaces on load
+	"detect_indentation": true,
+
+	// Trims white space added by auto_indent when moving the caret off the
+	// line.
+	"trim_automatic_white_space": false,
+
+	// Disables horizontal scrolling if enabled.
+	// May be set to true, false, or "auto", where it will be disabled for
+	// source code, and otherwise enabled.
+	"word_wrap": "auto",
+
+	// Set to a value other than 0 to force wrapping at that column rather than the
+	// window width
+	"wrap_width": 0,
+
+	// Set to true to draw a border around the visible rectangle on the minimap.
+	// The color of the border will be determined by the "minimapBorder" key in
+	// the color scheme
+	"draw_minimap_border": false,
+
+	// Always visualise the viewport on the minimap, as oppossed to only
+	// showing it on mouse over
+	"always_show_minimap_viewport": true,
+
+	// If enabled, will highlight any line with a caret
+	"highlight_line": true,
+
+	// This controls what happens when pressing up or down when on the first
+	// or last line.
+	// On OS X, this value is overridden in the platform specific settings, so
+	// you'll need to place this line in your user settings to override it.
+	"move_to_limit_on_up_down": true,
+
+	// Set to "none" to turn off drawing white space, "selection" to draw only the
+	// white space within the selection, and "all" to draw all white space
+	"draw_white_space": "selection",
+
+	// Set to false to turn off the indentation guides.
+	// The color and width of the indent guides may be customized by editing
+	// the corresponding .tmTheme file, and specifying the colors "guide",
+	// "activeGuide" and "stackGuide"
+	"draw_indent_guides": true,
+
+	// Controls how the indent guides are drawn, valid options are
+	// "draw_normal" and "draw_active". draw_active will draw the indent
+	// guides containing the caret in a different color.
+	"indent_guide_options": ["draw_active"],
+
+	// Set to true to removing trailing white space on save
+	"trim_trailing_white_space_on_save": true,
+
+	// Set to true to ensure the last line of the file ends in a newline
+	// character when saving
+	"ensure_newline_at_eof_on_save": true,
+
+	// Determines what character(s) are used to terminate each line in new files.
+	// Valid values are 'system' (whatever the OS uses), 'windows' (CRLF) and
+	// 'unix' (LF only).
+	"default_line_ending": "unix",
+
+	// By default, auto complete will commit the current completion on enter.
+	// This setting can be used to make it complete on tab instead.
+	// Completing on tab is generally a superior option, as it removes
+	// ambiguity between committing the completion and inserting a newline.
+	"auto_complete_commit_on_tab": true,
+
+	// Controls if auto complete is shown when snippet fields are active.
+	// Only relevant if auto_complete_commit_on_tab is true.
+	"auto_complete_with_fields": false,
+
+	// By default, shift+tab will only unindent if the selection spans
+	// multiple lines. When pressing shift+tab at other times, it'll insert a
+	// tab character - this allows tabs to be inserted when tab_completion is
+	// enabled. Set this to true to make shift+tab always unindent, instead of
+	// inserting tabs.
+	"shift_tab_unindent": true,
+
+	// If true, the copy and cut commands will operate on the current line
+	// when the selection is empty, rather than doing nothing.
+	"copy_with_empty_selection": true,
+
+	//
+	// User Interface Settings
+	//
+
+	// Set to 0 to disable smooth scrolling. Set to a value between 0 and 1 to
+	// scroll slower, or set to larger than 1 to scroll faster
+	"scroll_speed": 1.0,
+
+	// Makes tabs with modified files more visible
+	"highlight_modified_tabs": true,
+
+	//
+	// Application Behavior Settings
+	//
+
+	// Exiting the application with hot_exit enabled will cause it to close
+	// immediately without prompting. Unsaved modifications and open files will
+	// be preserved and restored when next starting.
+	//
+	// Closing a window with an associated project will also close the window
+	// without prompting, preserving unsaved changes in the workspace file
+	// alongside the project.
+	"hot_exit": false,
+
+	// Always prompt before reloading a file, even if the file hasn't been
+	// modified. The default behavior is to automatically reload a file if it
+	// hasn't been edited. If a file has unsaved changes, a prompt will always
+	// be shown.
+	"always_prompt_for_file_reload": false,
+
+	// Set to true to close windows as soon as the last file is closed, unless
+	// there's a folder open within the window. This is always enabled on OS X,
+	// changing it here won't modify the behavior.
+	"close_windows_when_empty": true
+}
