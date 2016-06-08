@@ -1,0 +1,8 @@
+<application>
+  <component name="UISettings">
+    <option name="EDITOR_TAB_LIMIT" value="40" />
+    <option name="SHOW_MEMORY_INDICATOR" value="true" />
+    <option name="EDITOR_TAB_PLACEMENT" value="4" />
+    <option name="ACTIVATE_MRU_EDITOR_ON_CLOSE" value="true" />
+  </component>
+</application>
