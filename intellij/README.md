@@ -9,7 +9,7 @@ There's a plugin called [Settings Repository](https://plugins.jetbrains.com/plug
 To import:
 
 1. JAR the files under [`settings`](settings)
-  * `jar cvf settings.jar settings/*`
+  * `jar cvfM settings.jar -C settings/ .`
 2. (optional) Delete your current settings to start fresh
   * Find where they're stored [here](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519)
 3. Open IntelliJ to the welcome screen
