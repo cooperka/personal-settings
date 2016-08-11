@@ -7,15 +7,17 @@ export ANDROID_HOME=~/Dev/sdk/android-sdk
 alias ni='npm i'
 alias nis='npm i --save'
 alias nisd='npm i --save-dev'
-alias yni='ynpm i'
+alias nu='npm uninstall'
+alias nus='npm uninstall --save'
+alias nusd='npm uninstall --save-dev'
 alias nup='npm update'
-alias ynup='ynpm update'
+alias np='npm prune'
+alias no='npm outdated'
 alias nli='npm list'
-alias ynli='ynpm list'
+alias nls='npm ls'
 alias nst='npm start'
-alias ynst='ynpm start'
 alias nt='npm test'
-alias ynt='ynpm test'
+alias lint='npm run-script lint'
 
 # Android
 alias pic="adb -e shell screencap -p | perl -pe 's/\x0D\x0A/\x0A/g' > ~/Pictures/ss-emulator/ss_${DATE_FORMAT}.png"
