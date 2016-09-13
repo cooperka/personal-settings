@@ -37,10 +37,12 @@ alias gsts='git stash save'
 alias gstp='git stash pop'
 alias grs='git reset'
 alias grsh='git reset HEAD'
-alias grhh='git reset HEAD --hard'
 alias grsh1='git reset HEAD^'
 alias grhs1='grsh1'
+alias grsH='git reset --hard'
 alias grsm='git reset --hard origin/master'
+alias grshm=grsm
+alias grshom=grsm
 grhhdir() {
   # grhh for each subdirectory
   ls -d */ | awk '{print $NF}' | xargs -n1 sh -c 'cd $0 && pwd && git reset HEAD --hard'
