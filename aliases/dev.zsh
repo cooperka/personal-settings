@@ -18,6 +18,7 @@ alias nls='npm ls'
 alias nst='npm start'
 alias nt='npm test'
 alias nln='npm link'
+alias nuln='npm unlink'
 alias lint='npm run-script lint'
 
 # Android
