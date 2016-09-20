@@ -1,6 +1,12 @@
 # Git aliases
+#
+# Note: Most of these (but not all) are Zsh defaults with the `git` plugin.
+# I explicitly added them here for reference, since some are overridden.
+#
+# It's also nice to have these for when the shell isn't Zsh (e.g. in MinGW).
+#
 diffs() {
-  git log $1..origin/master --author=kcooper
+  git log $1..origin/master --author=cooperka
 }
 alias g='git'
 alias gst='git status'
