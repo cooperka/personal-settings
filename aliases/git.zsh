@@ -27,6 +27,10 @@ alias gaa='git add .; git add -u; git status'
 alias gc='git commit -v'
 alias gc!='git commit -v --amend'
 alias gc@='git commit -v --amend --no-edit'
+gcw() {
+  # "Work in progress" sort of commit.
+  git commit -m "🚧  $@"
+}
 alias gp='echo "gps: git push, gpl: git pull"'
 alias gps='git push'
 alias gpso='git push origin'
