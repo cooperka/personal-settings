@@ -1,0 +1,7 @@
+<application>
+  <component name="FindSettings">
+    <option name="customScope" value="core w/ tests" />
+    <option name="defaultScopeName" value="core w/ tests" />
+    <option name="SEARCH_SCOPE" value="core w/ tests" />
+  </component>
+</application>
