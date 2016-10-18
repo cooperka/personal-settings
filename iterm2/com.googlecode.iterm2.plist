@@ -51,11 +51,11 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>269 197 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>410 376 620 392 0 0 1440 877 </string>
+	<string>2570 498 620 392 1920 0 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>178 341 918 512 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2406 256 913 541 1920 0 1920 1057 </string>
+	<string>2543 180 900 558 1920 0 1920 1057 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -664,6 +664,8 @@
 	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>490628201.79876202</real>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -699,6 +701,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/klap-hotel/Dev/personal-settings/iterm2</string>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>SUAutomaticallyUpdate</key>
 	<true/>
 	<key>SUEnableAutomaticChecks</key>
@@ -710,7 +714,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-08-24T17:14:55Z</date>
+	<date>2016-10-07T18:00:31Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>WordCharacters</key>
@@ -720,6 +724,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.5</string>
+	<string>3.0.8</string>
 </dict>
 </plist>
