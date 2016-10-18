@@ -53,7 +53,7 @@
         <ConfirmationsSetting value="0" id="Remove" />
       </component>
       <component name="PropertiesComponent">
-        <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+        <property name="settings.editor.selected.configurable" value="preferences.keymap" />
         <property name="settings.editor.splitter.proportion" value="0.2" />
       </component>
       <component name="RunManager">
