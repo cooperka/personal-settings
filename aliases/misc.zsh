@@ -3,7 +3,7 @@ export DATE_FORMAT=$(date +%Y-%m-%d-%H-%M-%S)
 
 # Personal preferences
 rc() {
-  nano ${ZSH_CUSTOM}/$1.zsh
+  ${EDITOR:-vim} ${ZSH_CUSTOM}/$1.zsh
 }
 alias rezsh='for f in ${ZSH_CUSTOM}/*.zsh; do echo "Loading ${f}"; source ${f}; done'
 lzsh() {
