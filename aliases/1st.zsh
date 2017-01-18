@@ -14,3 +14,13 @@ addpath() {
     err "Not a directory: $1"
   fi
 }
+
+# Make a string replacement in ALL files RECURSIVELY starting in the current directory.
+# Intentionally ignores '.git' directories, unless you're already in it.
+#
+# @param $1 - The string to find.
+# @param $2 - The string to replace each occurrence of $1 with.
+sed-recursive() {
+  find . -type f -not -path '*.git/*' -print0 | xargs -0 sed -i '' "s/$1/$2/g"
+}
+alias sr=sed-recursive
