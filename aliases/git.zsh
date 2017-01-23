@@ -96,4 +96,8 @@ pushtag() {
 # Memory jogs
 alias upstream='echo "git branch --set-upstream branchName origin/branchName OR git branch -u origin/branchName OR git push -u origin branchName"'
 alias bisect='echo "gbs start\ngbs good fd0a623\ngbs bad 256d850\ngbs good\ngbs bad\ngbs reset"'
-alias pullify='echo "git config --global --add remote.origin.fetch \"+refs/pull/*/head:refs/remotes/origin/pr/*\""'
+pullify() {
+  echo "git config --global --add remote.origin.fetch \"+refs/pull/*/head:refs/remotes/origin/pr/*\""
+  echo "git config --global --add remote.origin.fetch \"+refs/heads/*:refs/remotes/origin/*\""
+  echo "git config --global --list"
+}
