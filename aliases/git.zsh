@@ -71,6 +71,12 @@ alias gcp='git cherry-pick'
 alias gcpm='gcp -m 1'
 alias gcpc='gcp --continue'
 alias gcpa='gcp --abort'
+alias gfp='git format-patch'
+alias gap='git apply'
+alias gam='git am' # 'Apply Mailbox'
+alias gamc='git am --continue'
+alias gams='git am --skip'
+alias gama='git am --abort'
 alias grm='git rm'
 alias grem='git remote'
 alias gt='git tag'
@@ -101,3 +107,11 @@ pullify() {
   echo "git config --global --add remote.origin.fetch \"+refs/heads/*:refs/remotes/origin/*\""
   echo "git config --global --list"
 }
+git-patch() {
+  echo "git diff > fix.patch"
+  echo "git format-patch HEAD^ --stdout > fix.patch"
+  echo "git format-patch HEAD^ -o fix/"
+  echo "git apply --stat fix.patch # Preview the changes"
+  echo "git am fix.patch # Meaning 'Apply Mailbox', optionally with --signoff (-s)"
+}
+alias patch-git=git-patch
