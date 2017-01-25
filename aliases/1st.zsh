@@ -22,7 +22,7 @@ addpath() {
 # @param $2 - The string to replace each occurrence of $1 with.
 sed-recursive() {
   git status > /dev/null && \
-  find . -type f -not -path '*.git/*' -print0 | xargs -0 sed -i '' "s/$1/$2/g"
+  find . -type f -not -path '*.git/*' -print0 | xargs -0 sed -i "s/$1/$2/g"
 }
 alias sr=sed-recursive
 
