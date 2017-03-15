@@ -23,8 +23,9 @@ alias lint='npm run-script lint'
 
 # Android
 alias pic="adb -e shell screencap -p | perl -pe 's/\x0D\x0A/\x0A/g' > ~/Pictures/ss-emulator/ss_${DATE_FORMAT}.png"
-alias pics='adb -d pull /sdcard/Pictures/Screenshots/ ~/Pictures/ss-device'
-alias records='adb -d pull /sdcard/media/ ~/Pictures/record-device'
+alias pics='adb -d pull -a /sdcard/Pictures/Screenshots/ ~/Pictures/ss-device'
+alias pics-maint='adb -d pull -a /sdcard/Android/data/com.cribspot.maintenance/files/Pictures/ ~/Pictures/adb-maint'
+alias records='adb -d pull -a /sdcard/media/ ~/Pictures/record-device'
 alias record='adb -d shell screenrecord "/sdcard/media/screenrecord ${DATE_FORMAT}.mp4"'
 alias recorde='adb -e shell screenrecord "/sdcard/media/screenrecord ${DATE_FORMAT}.mp4"'
 stop() {
