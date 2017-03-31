@@ -59,7 +59,9 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>155 473 592 584 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>769 210 865 558 0 0 1920 1057 </string>
+	<string>776 140 865 558 0 0 1920 1057 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>722 235 865 537 0 0 1920 1057 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -718,11 +720,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-02-17T15:31:30Z</date>
+	<date>2017-03-21T14:10:24Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>UKCrashReporterLastCrashReportDate</key>
 	<real>1477494784</real>
 	<key>WordCharacters</key>
