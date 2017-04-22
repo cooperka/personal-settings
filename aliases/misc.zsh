@@ -9,6 +9,14 @@ alias rezsh='for f in ${ZSH_CUSTOM}/*.zsh; do echo "Loading ${f}"; source ${f}; 
 lzsh() {
   less ${ZSH_CUSTOM}/$1.zsh
 }
+gzsh() {
+  if type ag > /dev/null; then
+    ag $1 ${ZSH_CUSTOM}/*.zsh
+  else
+    echo "No silver searcher installed! Falling back..."
+    for f in ${ZSH_CUSTOM}/*.zsh; do echo "-- ${f} --"; less ${f} | grep $1; done
+  fi
+}
 
 # Copy/paste with pipes
 alias c='xclip'
