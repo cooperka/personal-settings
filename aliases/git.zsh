@@ -98,6 +98,8 @@ alias gbs='git bisect'
 alias gsm='git submodule'
 alias gsmu='git submodule update'
 alias gcl='git clone --recursive'
+alias gcfg='git config'
+alias gcfgg='git config --global'
 alias gplkc='git pull kc HEAD'
 alias gpskc='git push -f kc HEAD'
 gcof() {
@@ -119,6 +121,9 @@ alias bisect='echo "gbs start\ngbs good fd0a623\ngbs bad 256d850\ngbs good\ngbs 
 pullify() {
   echo "git config --global --add remote.origin.fetch \"+refs/pull/*/head:refs/remotes/origin/pr/*\""
   echo "git config --global --add remote.origin.fetch \"+refs/heads/*:refs/remotes/origin/*\""
+  echo "git config --global --add remote.kc.fetch \"+refs/pull/*/head:refs/remotes/kc/pr/*\""
+  echo "git config --global --add remote.kc.fetch \"+refs/heads/*:refs/remotes/kc/*\""
+  echo "git config --global --edit"
   echo "git config --global --list"
 }
 git-patch() {
