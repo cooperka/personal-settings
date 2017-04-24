@@ -119,10 +119,12 @@ pushtag() {
 alias upstream='echo "git branch --set-upstream-to origin/branchName OR git branch -u origin/branchName OR git push -u origin branchName"'
 alias bisect='echo "gbs start\ngbs good fd0a623\ngbs bad 256d850\ngbs good\ngbs bad\ngbs reset"'
 pullify() {
-  echo "git config --global --add remote.origin.fetch \"+refs/pull/*/head:refs/remotes/origin/pr/*\""
   echo "git config --global --add remote.origin.fetch \"+refs/heads/*:refs/remotes/origin/*\""
-  echo "git config --global --add remote.kc.fetch \"+refs/pull/*/head:refs/remotes/kc/pr/*\""
+  echo "git config --global --add remote.origin.fetch \"+refs/pull/*/head:refs/remotes/origin/pr/*\""
+  echo "git config --global --add remote.origin.fetch \"+refs/merge-requests/*/head:refs/remotes/origin/mr/*\""
   echo "git config --global --add remote.kc.fetch \"+refs/heads/*:refs/remotes/kc/*\""
+  echo "git config --global --add remote.kc.fetch \"+refs/pull/*/head:refs/remotes/kc/pr/*\""
+  echo "git config --global --add remote.kc.fetch \"+refs/merge-requests/*/head:refs/remotes/kc/mr/*\""
   echo "git config --global --edit"
   echo "git config --global --list"
 }
