@@ -3,7 +3,25 @@ addpath ~/sdk/android-sdk/platform-tools
 addpath ~/sdk/android-sdk/tools
 export ANDROID_HOME=~/sdk/android-sdk
 
-# Misc.
+# Yarn
+alias yi='yarn install'
+alias yu='yarn upgrade'
+alias ya='yarn add --exact'
+alias yad='yarn add --dev --exact'
+alias yag='yarn global add'
+alias yga='yarn global add'
+alias yr='yarn remove'
+alias yst='yarn start'
+alias yt='yarn test'
+alias lint='yarn run lint'
+alias yl='yarn list'
+alias yln='yarn link'
+alias yuln='yarn unlink'
+alias ycc='yarn cache clean'
+alias yw='yarn why'
+alias ylic='yarn licenses ls'
+
+# npm
 alias ni='npm i'
 alias nis='npm i --save'
 alias nisd='npm i --save-dev'
@@ -19,7 +37,7 @@ alias nst='npm start'
 alias nt='npm test'
 alias nln='npm link'
 alias nuln='npm unlink'
-alias lint='npm run-script lint'
+alias nlint='npm run lint'
 
 # Android
 alias pic="adb -e shell screencap -p | perl -pe 's/\x0D\x0A/\x0A/g' > ~/Pictures/ss-emulator/ss_${DATE_FORMAT}.png"
