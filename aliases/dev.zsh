@@ -46,6 +46,7 @@ alias pics-maint='adb -d pull -a /sdcard/Android/data/com.cribspot.maintenance/f
 alias records='adb -d pull -a /sdcard/media/ ~/Pictures/record-device'
 alias record='adb -d shell screenrecord "/sdcard/media/screenrecord ${DATE_FORMAT}.mp4"'
 alias recorde='adb -e shell screenrecord "/sdcard/media/screenrecord ${DATE_FORMAT}.mp4"'
+alias menu='adb -d shell input keyevent KEYCODE_MENU'
 stop() {
   if [ $# -eq 2 ]; then
     adb $1 shell am force-stop $2
