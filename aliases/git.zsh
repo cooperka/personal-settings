@@ -102,12 +102,16 @@ alias gcfg='git config'
 alias gcfgg='git config --global'
 alias gplkc='git pull kc HEAD'
 alias gpskc='git push -f kc HEAD'
+
+alias branch='git rev-parse --abbrev-ref HEAD'
+
 gcof() {
   if [ $1 ]; then
     git fetch
     git checkout -B $1 origin/$1
   fi
 }
+
 pushtag() {
   if [ $1 ]; then
     git tag $1
