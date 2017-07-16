@@ -23,6 +23,8 @@ alias c='xclip'
 alias cc='xclip -selection clipboard'
 alias v='xclip -o'
 
+alias get-ip='ipconfig getifaddr en0 | pbcopy && echo "Copied."'
+
 # Memory jogs
 alias lines='echo "cat -n FILE"'
 alias fix-monitor='echo "http://www.ireckon.net/2013/03/force-rgb-mode-in-mac-os-x-to-fix-the-picture-quality-of-an-external-monitor"; echo "/System/Library/Displays/Overrides/DisplayVendorID-469/DisplayProductID-22fd"'

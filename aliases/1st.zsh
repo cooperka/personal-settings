@@ -25,3 +25,10 @@ sed-recursive() {
   find . -type f -not -path '*.git/*' -print0 | xargs -0 sed -i '' "s/$1/$2/g"
 }
 alias sr=sed-recursive
+
+# TODO: This is hacky, just use CLI options.
+sed-recursive-dir() {
+  # Execute in a subshell so 'cd' doesn't affect the caller.
+  zsh -c 'source ~/.oh-my-zsh/custom/1st.zsh; export LC_ALL=C; cd $1 && sed-recursive $2 $3' $0 $@
+}
+alias srd=sed-recursive-dir

@@ -41,6 +41,20 @@ alias nln='npm link'
 alias nuln='npm unlink'
 alias nlint='npm run lint'
 
+# Jest
+alias ntu='npm run test -- -updateSnapshot'
+
+# React Native
+alias rn='react-native'
+# @param $1 - The app package name, e.g. 'com.example.app'.
+db-pull() {
+  adb $2 pull "/data/data/$1/databases" ~/Downloads/adb/
+}
+# @param $1 - The app package name, e.g. 'com.example.app'.
+db-push() {
+  adb $2 push ~/Downloads/adb/databases/RKStorage* "/data/data/$1/databases/"
+}
+
 # Android
 alias pic="adb -e shell screencap -p | perl -pe 's/\x0D\x0A/\x0A/g' > ~/Pictures/ss-emulator/ss_${DATE_FORMAT}.png"
 alias pics='adb -d pull -a /sdcard/Pictures/Screenshots/ ~/Pictures/ss-device'
@@ -69,6 +83,20 @@ uninstall() {
   else
     adb uninstall $1
   fi
+}
+
+alias set-date='adb shell "date `date +%m%d%H%M%Y.%S`"'
+alias adb-date=set-date
+
+mv-icons() {
+  echo "Moving '$2' icons under $1/android/app/src/main/res/ into mipmap folders..."
+  echo "Hopefully they're named properly ('$2-hdpi.png' etc.)"
+  cd $1/android/app/src/main/res/
+  for type in m h xh xxh xxxh
+  do
+    echo "Moving $2-${type}.png"
+    mv -f $2-${type}.png mipmap-${type}dpi/$2.png
+  done
 }
 
 # Gradle
