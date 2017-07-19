@@ -46,7 +46,7 @@ alias nlint='npm run lint'
 
 # --- Jest
 
-alias ntu='npm run test -- -updateSnapshot'
+alias ntu='yarn run test -- --updateSnapshot'
 
 # --- React Native
 
