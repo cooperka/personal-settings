@@ -44,6 +44,10 @@ alias nln='npm link'
 alias nuln='npm unlink'
 alias nlint='npm run lint'
 
+# --- Ruby/rails
+
+alias bi='bundle install'
+
 # --- Jest
 
 alias ntu='yarn run test -- --updateSnapshot'
