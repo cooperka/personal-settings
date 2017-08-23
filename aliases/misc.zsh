@@ -48,3 +48,8 @@ alias fix-eclipse='echo "rm ~/dev/Workspaces/EclipseAndroid/.metadata/.plugins/o
 alias fix-xcode='echo "rm -rf /Users/klap-hotel/Library/Developer/Xcode/DerivedData"'
 ios-dir() { echo 'Pause simulator, then `po NSHomeDirectory()`' }
 nvm-upgrade() { echo 'To upgrade, `cd ~/.nvm && git pull` then checkout the latest tag' }
+mac-mount() {
+  echo 'diskutil list
+sudo umount /dev/disk3 # Unmount the veracrypt mounted volume
+sudo /usr/local/bin/ntfs-3g /dev/disk3 /Volumes/NTFS -olocal -oallow_other # Remount it with read/write access'
+}
