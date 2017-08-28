@@ -109,10 +109,10 @@ mv-icons() {
   echo "Moving '$2' icons under $1/android/app/src/main/res/ into mipmap folders..."
   echo "Hopefully they're named properly ('$2-hdpi.png' etc.)"
   cd $1/android/app/src/main/res/
-  for type in m h xh xxh xxxh
+  for type in mdpi hdpi xhdpi xxhdpi xxxhdpi
   do
     echo "Moving $2-${type}.png"
-    mv -f $2-${type}.png mipmap-${type}dpi/$2.png
+    mv -f $2-${type}.png mipmap-${type}/$2.png
   done
 }
 
