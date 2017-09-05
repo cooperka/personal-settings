@@ -30,6 +30,21 @@ gzsh() {
   fi
 }
 
+pull-aliases() {
+  export TEMP=`pwd`
+  cd ~/dev/personal-settings/aliases
+  pwd
+  gpl
+  cd ~/dev/cribspot/cribspot-aliases
+  pwd
+  gpl
+  cd ~/dev/wecount/wecount-aliases
+  pwd
+  gpl
+  cd ${TEMP}
+}
+alias pla='pull-aliases'
+
 # --- Copy/paste with pipes
 
 alias c='xclip'
