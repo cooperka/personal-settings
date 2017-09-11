@@ -68,3 +68,9 @@ mac-mount() {
 sudo umount /dev/disk3 # Unmount the veracrypt mounted volume
 sudo /usr/local/bin/ntfs-3g /dev/disk3 /Volumes/NTFS -olocal -oallow_other # Remount it with read/write access'
 }
+remap() {
+  echo 'To remap mouse buttons:
+xinput list # Find devices
+xinput list NUM | grep state # Find active button numbers for current device
+xinput set-button-map NUM 1 2 3 4 5 0 0 # Remap buttons, 0 to disable'
+}
