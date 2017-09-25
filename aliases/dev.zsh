@@ -50,7 +50,8 @@ alias bi='bundle install'
 
 # --- Jest
 
-alias ntu='yarn run test -- --updateSnapshot'
+alias ntu='npm run test -- --updateSnapshot'
+alias ytu='yarn run test --updateSnapshot'
 
 # --- React Native
 
