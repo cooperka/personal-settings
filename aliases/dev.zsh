@@ -44,10 +44,6 @@ alias nln='npm link'
 alias nuln='npm unlink'
 alias nlint='npm run lint'
 
-# --- Ruby/rails
-
-alias bi='bundle install'
-
 # --- Jest
 
 alias ntu='npm run test -- --updateSnapshot'
@@ -56,6 +52,14 @@ alias ytu='yarn run test --updateSnapshot'
 # --- React Native
 
 alias rn='react-native'
+
+# --- Ruby/rails
+
+alias bi='bundle install'
+
+# --- Ember
+
+alias em='yarn run ember'
 
 # @param $1 - The app package name, e.g. 'com.example.app'.
 db-pull() {
