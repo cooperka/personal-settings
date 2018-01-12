@@ -2,6 +2,9 @@
 addpath "$HOME/sdk/redis-3.2.3/src"
 addpath "$HOME/Applications/anaconda3/bin"
 
+# Disable fwd/back on J-Tech Digital mouse at home.
+xinput set-button-map 11 1 2 3 4 5 0 0 0 0 0 0 0 0
+
 # WebStorm
 # https://youtrack.jetbrains.com/issue/IDEA-78860
 export IBUS_ENABLE_SYNC_MODE=1
