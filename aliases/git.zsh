@@ -84,6 +84,17 @@ alias gams='git am --skip'
 alias gama='git am --abort'
 alias grm='git rm'
 alias grem='git remote'
+grema() {
+  local repo
+  if [ -z $2 ]; then
+    repo=`basename $(git rev-parse --show-toplevel)`
+  else
+    repo=$2
+  fi
+
+  echo "Adding $1/${repo}"
+  git remote add $1 git@github.com:$1/${repo}.git
+}
 alias gt='git tag'
 alias grp='git rev-parse'
 alias grph='git rev-parse HEAD'
