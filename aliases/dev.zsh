@@ -2,6 +2,7 @@
 
 addpath ~/sdk/android-sdk/platform-tools
 addpath ~/sdk/android-sdk/tools
+addpath `yarn global bin`
 export ANDROID_HOME=~/sdk/android-sdk
 
 # --- Yarn
@@ -10,8 +11,9 @@ alias yi='yarn install'
 alias yu='yarn upgrade'
 alias ya='yarn add --exact'
 alias yad='yarn add --dev --exact'
-alias yga='yarn global add'
 alias yg='yarn global'
+alias yga='yarn global add'
+alias ygl='yarn global list'
 alias yr='yarn remove'
 alias yst='yarn start'
 alias yt='yarn test'
