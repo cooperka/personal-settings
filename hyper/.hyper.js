@@ -131,7 +131,13 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [],
+  plugins: [
+    'hypercwd',
+    // Broken https://github.com/Hyperline/hyperline/issues/155
+    // 'hyperline',
+    // Broken https://github.com/patrik-piskay/hyperterm-tabs/issues/19
+    // 'hyperterm-tabs#next',
+  ],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
