@@ -1,6 +1,7 @@
 # Misc. paths
 addpath "$HOME/sdk/redis-3.2.3/src"
 addpath "$HOME/Applications/anaconda3/bin"
+addpath "$HOME/.local/bin"
 
 # Disable fwd/back on J-Tech Digital mouse at home.
 disable-mouse-extras() {
