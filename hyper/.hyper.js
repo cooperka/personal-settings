@@ -132,11 +132,18 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
+    // Opens new tabs with the same directory as the current tab.
     'hypercwd',
+
+    // Tab reordering support via alt+left/right.
+    'hyperterm-tabs',
+
+    // Layout presets.
+    'hyperlayout',
+
+    // Bottom status-line.
     // Broken https://github.com/Hyperline/hyperline/issues/155
     // 'hyperline',
-    // Broken https://github.com/patrik-piskay/hyperterm-tabs/issues/19
-    // 'hyperterm-tabs#next',
   ],
 
   // in development, you can create a directory under
