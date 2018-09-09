@@ -14,6 +14,13 @@ if [ -n "$BASH_VERSION" ]; then
     [ -f "$HOME/.bashrc" ] && source "$HOME/.bashrc"
 fi
 
+# only if running zsh
+if [ -n "$ZSH_VERSION" ]; then
+    # Google Cloud SDK.
+    [ -f "$HOME/sdk/google-cloud-sdk/path.zsh.inc" ] && source "$HOME/sdk/google-cloud-sdk/path.zsh.inc"
+    [ -f "$HOME/sdk/google-cloud-sdk/completion.zsh.inc" ] && source "$HOME/sdk/google-cloud-sdk/completion.zsh.inc"
+fi
+
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
@@ -28,10 +35,6 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # Travis gem.
 [ -f "$HOME/.travis/travis.sh" ] && source "$HOME/.travis/travis.sh"
-
-# Google Cloud SDK.
-[ -f "$HOME/sdk/google-cloud-sdk/path.zsh.inc" ] && source "$HOME/sdk/google-cloud-sdk/path.zsh.inc"
-[ -f "$HOME/sdk/google-cloud-sdk/completion.zsh.inc" ] && source "$HOME/sdk/google-cloud-sdk/completion.zsh.inc"
 
 # Greeting.
 echo "Welcome, ${USER}"
