@@ -86,11 +86,6 @@
     // Application Behavior Settings
     //
 
-    // Exiting the application with hot_exit enabled will cause it to close
-    // immediately without prompting. Unsaved modifications and open files will
-    // be preserved and restored when next starting.
-    "hot_exit": false,
-
     // OS X only: When files are opened from finder, or by dragging onto the
     // dock icon, this controls if a new window is created or not.
     "open_files_in_new_window": false,
