@@ -1,9 +1,9 @@
 # --- Exports
 
-addpath ~/sdk/android-sdk/platform-tools
-addpath ~/sdk/android-sdk/tools
-addpath `yarn global bin`
-export ANDROID_HOME=~/sdk/android-sdk
+addpath "$HOME/sdks/android-sdk/platform-tools"
+addpath "$HOME/sdks/android-sdk/tools"
+addpath "`yarn global bin`"
+export ANDROID_HOME="$HOME/sdks/android-sdk"
 
 # --- Yarn
 
