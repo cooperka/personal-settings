@@ -16,11 +16,11 @@ disable-mouse-extras
 # WebStorm
 # https://youtrack.jetbrains.com/issue/IDEA-78860
 export IBUS_ENABLE_SYNC_MODE=1
-export WS_DIR="$HOME/apps/WebStorm-11"
+export WS_DIR="$HOME/apps/WebStorm"
 alias ws="sh $WS_DIR/bin/webstorm.sh"
 
 # Android
-export AS_DIR="$HOME/apps/android-studio"
+export AS_DIR="$HOME/apps/AndroidStudio"
 alias and="sh $AS_DIR/bin/studio.sh"
 
 # Ruby
