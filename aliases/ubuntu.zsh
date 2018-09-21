@@ -11,7 +11,7 @@ disable-mouse-extras() {
 disable-mouse-extras
 
 # Python
-alias python="$HOME/apps/anaconda3/bin/python"
+# alias python="$HOME/apps/anaconda3/bin/python"
 
 # WebStorm
 # https://youtrack.jetbrains.com/issue/IDEA-78860
