@@ -97,6 +97,7 @@ grema() {
   echo "Adding $1/${repo}"
   git remote add $1 git@github.com:$1/${repo}.git
 }
+alias grup='git remote update'
 alias gt='git tag'
 alias grp='git rev-parse'
 alias grph='git rev-parse HEAD'
