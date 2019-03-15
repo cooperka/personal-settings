@@ -6,6 +6,7 @@ addpath "$HOME/sdks/android-sdk/emulator"
 addpath "$HOME/.cargo/bin"
 addpath "`yarn global bin`"
 export ANDROID_HOME="$HOME/sdks/android-sdk"
+export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
 
 # --- Yarn
 
