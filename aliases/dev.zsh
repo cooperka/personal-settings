@@ -2,6 +2,7 @@
 
 addpath "$HOME/sdks/android-sdk/platform-tools"
 addpath "$HOME/sdks/android-sdk/tools"
+addpath "$HOME/sdks/android-sdk/emulator"
 addpath "`yarn global bin`"
 export ANDROID_HOME="$HOME/sdks/android-sdk"
 
