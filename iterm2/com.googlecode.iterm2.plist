@@ -61,17 +61,17 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>269 197 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SUAutomaticUpdateAlert</key>
-	<string>652 674 616 174 0 0 1920 1057 </string>
+	<string>412 539 616 174 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>2570 498 620 392 1920 0 1920 1057 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 139 606 469 0 0 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>314 402 918 452 0 0 1440 877 </string>
+	<string>314 402 796 473 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>101 159 1285 560 0 0 1440 877 </string>
+	<string>56 133 1270 560 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>155 209 1285 537 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -672,6 +672,8 @@
 	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
 	<integer>0</integer>
+	<key>NoSyncHaveRequestedFullDiskAccess</key>
+	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>C9BA6A47-4CBE-4578-B414-73EB821CBAFD</string>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -732,11 +734,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-05-20T22:36:56Z</date>
+	<date>2019-04-24T16:18:08Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>UKCrashReporterLastCrashReportDate</key>
 	<real>1505318016</real>
 	<key>WordCharacters</key>
@@ -746,6 +748,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.5</string>
+	<string>3.2.6</string>
 </dict>
 </plist>
