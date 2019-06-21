@@ -14,7 +14,7 @@ alias gh='git help'
 alias gl='git log'
 alias glp='git log --patch'
 alias gld='git log --pretty=fuller' # Show commit date along with author date
-alias gs='git log -S' # Find commits with string added/removed in diff
+alias gss='git log -S' # Find commits with string added/removed in diff
 alias gsg='git log -G' # Find commits with regex string anywhere in changed lines
 alias grl='git reflog'
 alias gco='git checkout'
