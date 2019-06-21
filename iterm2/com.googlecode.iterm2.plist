@@ -65,13 +65,13 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>2570 498 620 392 1920 0 1920 1057 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>269 139 606 469 0 0 1920 1057 </string>
+	<string>171 96 606 469 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>314 402 796 473 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>56 133 1270 560 0 0 1440 877 </string>
+	<string>12 173 1418 594 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>155 209 1285 537 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -734,11 +734,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-04-24T16:18:08Z</date>
+	<date>2019-06-18T01:59:44Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>UKCrashReporterLastCrashReportDate</key>
 	<real>1505318016</real>
 	<key>WordCharacters</key>
