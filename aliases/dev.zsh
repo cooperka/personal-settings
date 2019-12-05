@@ -117,8 +117,8 @@ uninstall() {
   fi
 }
 
-alias set-date='adb shell "date `date +%m%d%H%M%Y.%S`"'
-alias adb-date=set-date
+alias set-date-adb='adb shell "date `date +%m%d%H%M%Y.%S`"'
+alias sda=set-date-adb
 
 mv-icons() {
   echo "Moving '$2' icons under $1/android/app/src/main/res/ into mipmap folders..."
@@ -142,8 +142,8 @@ single() {
 }
 
 alias pkj='pkill java; gradle --stop'
-alias pkjm='' # pjk "maybe" (wrapper to toggle killing or not)
+alias pkjm='' # pkj "maybe" (wrapper to toggle killing or not)
 
-# --- Repo
+# --- Repo (no longer using)
 
-alias rs='repo sync'
+#alias rs='repo sync'
