@@ -66,6 +66,8 @@ alias rsp='rs -e production'
 alias rsd='rs -e development'
 alias rc='be rails console'
 alias rspec='be rspec'
+alias cop='be rubocop'
+alias copa='cop --auto-correct'
 
 # --- Ember
 
