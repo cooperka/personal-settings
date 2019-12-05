@@ -58,7 +58,14 @@ alias rn='react-native'
 
 # --- Ruby/rails
 
+alias b='bundle'
 alias bi='bundle install'
+alias be='bundle exec'
+alias rs='be rails start'
+alias rsp='rs -e production'
+alias rsd='rs -e development'
+alias rc='be rails console'
+alias rspec='be rspec'
 
 # --- Ember
 
