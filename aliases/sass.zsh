@@ -2,11 +2,16 @@ export SASS_DIR=~/dev/lsr/sassafras
 export ODK_COLLECT_DIR=${SASS_DIR}/collect
 export NEMO_DIR=${SASS_DIR}/nemo
 
+export AWS_DEFAULT_PROFILE=tcc
+
 alias sass='cd ${SASS_DIR}'
 alias odkc='cd ${ODK_COLLECT_DIR}'
 alias nemo='cd ${NEMO_DIR}'
 
 alias nemos='nvm use && echo "\nCollect endpoint: http://YOURIP:8443/m/yourmission\n" && rails s -p 8443 -b 0.0.0.0'
+
+# Connect, with reminder to disconnect
+alias vpnc='open http://timer-tab.com && vpn connect'
 
 # --- IntelliJ workspaces.
 
