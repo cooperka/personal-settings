@@ -69,6 +69,17 @@ alias rspec='be rspec'
 alias cop='be rubocop'
 alias copa='cop --auto-correct'
 
+# Insert a "@@@" placeholder in a file ($1) at a given line ($2) and column ($3).
+insert_symbol() {
+  gawk -i inplace -v "line=$2" -v "col=$3" 'NR != line { print; next } { re = ".{" col "}"; sub(re, "&@@@"); print }' $1
+  echo "Modified $1"
+}
+
+# For a given rubocop rule ($1), annotate all violating files at the location of violation.
+annotate_cops() {
+  cop --only $1 --format emacs | gawk -F: -v "root=`pwd`/" '{ path = $1; sub(root, "", path); print "\\\"" path "\\\" " $2 " " $3 }' | xargs -I% sh -c "$(typeset -f insert_symbol); insert_symbol %"
+}
+
 # --- Ember
 
 alias em='yarn run ember'
