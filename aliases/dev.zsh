@@ -96,6 +96,16 @@ db-push() {
   adb $2 push ~/Downloads/adb/databases/RKStorage* "/data/data/$1/databases/"
 }
 
+# --- Neo4j
+
+# First arg to these aliases should be the name of the docker container.
+alias docker-exec='sudo docker-compose -f ./scripts/docker-compose.yml exec'
+alias docker-exec-piped='docker-exec -T'
+alias neo4j-admin='docker-exec bin/neo4j-admin'
+alias neo4j-admin-piped='docker-exec-piped bin/neo4j-admin'
+alias cypher-shell='docker-exec bin/cypher-shell'
+alias cypher-shell-piped='docker-exec-piped bin/cypher-shell'
+
 # --- Android
 
 alias pic="adb -e shell screencap -p | perl -pe 's/\x0D\x0A/\x0A/g' > ~/Pictures/ss-emulator/ss_${DATE_FORMAT}.png"
