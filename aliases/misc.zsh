@@ -51,6 +51,11 @@ alias c='xclip'
 alias cc='xclip -selection clipboard'
 alias v='xclip -o'
 
+# --- Security
+
+alias share5m="pbpaste > /tmp/secret.txt && echo \"Uploading: `cat /tmp/secret.txt`\" && ffsend upload /tmp/secret.txt -d 1 -e 5m | pbcopy"
+alias share1d="pbpaste > /tmp/secret.txt && echo \"Uploading: `cat /tmp/secret.txt`\" && ffsend upload /tmp/secret.txt -d 1 -e 1d | pbcopy"
+
 # --- Misc.
 
 alias get-ip='ipconfig getifaddr en0 | pbcopy && echo "Copied."'
