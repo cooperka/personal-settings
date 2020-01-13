@@ -53,8 +53,8 @@ alias v='xclip -o'
 
 # --- Security
 
-alias share5m="pbpaste > /tmp/secret.txt && echo \"Uploading: `cat /tmp/secret.txt`\" && ffsend upload /tmp/secret.txt -d 1 -e 5m | pbcopy"
-alias share1d="pbpaste > /tmp/secret.txt && echo \"Uploading: `cat /tmp/secret.txt`\" && ffsend upload /tmp/secret.txt -d 1 -e 1d | pbcopy"
+alias share5m="pbpaste > /tmp/secret.txt && echo \"Uploading: `cat /tmp/secret.txt`\" && ffsend upload /tmp/secret.txt -d 1 -e 5m | tr -d '[:space:]' | pbcopy"
+alias share1d="pbpaste > /tmp/secret.txt && echo \"Uploading: `cat /tmp/secret.txt`\" && ffsend upload /tmp/secret.txt -d 1 -e 1d | tr -d '[:space:]' | pbcopy"
 
 # --- Misc.
 
