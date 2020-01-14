@@ -9,6 +9,8 @@ export ANDROID_HOME="$HOME/sdks/android-sdk"
 # --- Yarn
 
 alias yi='yarn install'
+alias yic='yi --check-files'
+alias yio='yi --offline'
 alias yu='yarn upgrade'
 alias ya='yarn add --exact'
 alias yad='yarn add --dev --exact'
@@ -62,6 +64,9 @@ alias b='bundle'
 alias bi='bundle install'
 alias be='bundle exec'
 alias bup='bundle update'
+alias gi='gem install'
+alias gu='gem uninstall'
+alias gup='gem update'
 alias rs='be rails start'
 alias rsp='rs -e production'
 alias rsd='rs -e development'
