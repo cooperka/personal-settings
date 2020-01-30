@@ -129,6 +129,7 @@ alias gplkc='git pull kc HEAD'
 alias gpskc='git push -f kc HEAD'
 
 alias branch='git rev-parse --abbrev-ref HEAD'
+alias ref='git rev-parse --short HEAD'
 
 gcof() {
   if [ $1 ]; then
