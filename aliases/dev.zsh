@@ -91,6 +91,12 @@ annotate_cops() {
   cop --only $1 --format emacs | gawk -F: -v "root=`pwd`/" '{ path = $1; sub(root, "", path); print "\\\"" path "\\\" " $2 " " $3 }' | xargs -I% sh -c "$(typeset -f insert_symbol); insert_symbol %"
 }
 
+# --- AWS
+
+alias awsL='aws --profile lsr'
+alias awsT='aws --profile tcc'
+alias awsS='aws --profile sassy'
+
 # --- Ember
 
 alias em='yarn run ember'
