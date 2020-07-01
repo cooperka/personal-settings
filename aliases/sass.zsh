@@ -1,6 +1,6 @@
-export SASS_DIR=~/dev/lsr/sassafras
-export ODK_COLLECT_DIR=${SASS_DIR}/collect
-export NEMO_DIR=${SASS_DIR}/nemo
+export SASS_DIR=~/dev/sassafras
+export ODK_COLLECT_DIR=${SASS_DIR}/tcc/collect
+export NEMO_DIR=${SASS_DIR}/tcc/nemo
 
 export AWS_DEFAULT_PROFILE=tcc
 
@@ -12,6 +12,10 @@ alias nemos='nvm use && echo "\nCollect endpoint: http://YOURIP:8443/m/yourmissi
 
 # Connect, with reminder to disconnect
 alias vpnc='open http://timer-tab.com && vpn connect'
+
+# --- Aggie
+
+addpath "$HOME/sdks/mongodb-2.6.12/bin"
 
 # --- IntelliJ workspaces.
 
