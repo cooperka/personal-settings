@@ -18,15 +18,15 @@ alias gss='git log -S `# Find commits with string added/removed in diff`'
 alias gsg='git log -G `# Find commits with regex string anywhere in changed lines`'
 alias grl='git reflog'
 alias gco='git checkout'
-alias gcob='git branch; git checkout -b'
+alias gcob='gb; git checkout -b'
 alias gcm='git checkout master'
 alias gcs='git checkout stable'
 alias gcd='git checkout dev'
 alias gcdp='git checkout develop'
 alias gcdt='git checkout development'
 alias gcl='git clone --recursive'
-alias gb='git branch'
-alias gbu='git branch -u origin/`branch` `branch`' # Set upstream
+alias gb='git --no-pager branch'
+alias gbu='gb -u origin/`branch` `branch`' # Set upstream
 alias ga='git add'
 alias gaa='git add -A; git add -u; git status'
 alias gc='git commit -v'
@@ -104,7 +104,7 @@ grema() {
   git remote add $1 git@github.com:$1/${repo}.git
 }
 alias grup='git remote update'
-alias gt='git tag'
+alias gt='git --no-pager tag'
 alias grp='git rev-parse'
 alias grph='git rev-parse HEAD'
 alias grpm='git rev-parse master'
@@ -141,7 +141,7 @@ gcof() {
 
 pushtag() {
   if [ $1 ]; then
-    git tag $1
+    gt $1
     git push origin tags/$1
   fi
 }
