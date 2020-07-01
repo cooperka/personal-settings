@@ -93,6 +93,9 @@ alias gama='git am --abort'
 alias grm='git rm'
 alias grem='git remote'
 grema() {
+  echo "Use 'hub fetch $1' instead"
+  return
+
   local repo
   if [ -z $2 ]; then
     repo=`basename $(git rev-parse --show-toplevel)`
@@ -128,6 +131,12 @@ alias gcfg='git config'
 alias gcfgg='git config --global'
 alias gplkc='git pull kc HEAD'
 alias gpskc='git push -f kc HEAD'
+
+alias hh='hub help'
+alias hb='hub browse'
+alias hf='hub fetch'
+alias hc='hub clone'
+alias hgc='hub gist create --browse'
 
 alias branch='git rev-parse --abbrev-ref HEAD'
 alias ref='git rev-parse --short HEAD'
