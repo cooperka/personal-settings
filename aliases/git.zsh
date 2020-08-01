@@ -1,13 +1,10 @@
 # Git aliases
 #
-# Note: Most of these (but not all) are Zsh defaults with the `git` plugin.
+# Note: Some of these are Zsh defaults with the `git` plugin.
 # I explicitly added them here for reference, since some are overridden.
 #
 # It's also nice to have these for when the shell isn't Zsh (e.g. in MinGW).
 #
-diffs() {
-  git log $1..origin/master --author=cooperka
-}
 alias g='git'
 alias gst='git status'
 alias gh='git help'
@@ -19,7 +16,8 @@ alias gsg='git log -G `# Find commits with regex string anywhere in changed line
 alias grl='git reflog'
 alias gco='git checkout'
 alias gcob='gb; git checkout -b'
-alias gcm='git checkout master'
+alias gcm='git checkout main'
+alias gcmr='git checkout master'
 alias gcs='git checkout stable'
 alias gcd='git checkout dev'
 alias gcdp='git checkout develop'
@@ -29,6 +27,7 @@ alias gb='git --no-pager branch'
 alias gbu='gb -u origin/`branch` `branch`' # Set upstream
 alias ga='git add'
 alias gaa='git add -A; git add -u; git status'
+alias gaaa=gaa
 alias gc='git commit -v'
 alias gc!='git commit -v --amend'
 alias gc@='git commit -v --amend --no-edit'
@@ -47,10 +46,12 @@ alias gplr='git pull --rebase'
 alias gd='git diff'
 alias gdc='git diff --cached'
 alias gds='git diff --stat'
-alias gdm='git diff master'
+alias gdm='git diff main'
+alias gdmr='git diff master'
 alias gm='git merge'
-alias gmm='git merge master'
-alias gmdv='git merge dev'
+alias gmm='git merge main'
+alias gmmr='git merge master'
+alias gmd='git merge dev'
 alias gmdp='git merge develop'
 alias gmdt='git merge development'
 alias gsta='git stash'
@@ -64,16 +65,16 @@ alias grsh='git reset HEAD'
 alias grsh1='git reset HEAD^'
 alias grhs1='grsh1'
 alias grsH='git reset --hard'
-alias grsm='git reset --hard origin/master'
-alias grshm=grsm
-alias grshom=grsm
+alias grsHom='git reset --hard origin/main'
+alias grsHomr='git reset --hard origin/master'
 grhhdir() {
   # grhh for each subdirectory
   ls -d */ | awk '{print $NF}' | xargs -n1 sh -c 'cd $0 && pwd && git reset HEAD --hard'
 }
 alias grt='git revert'
 alias grb='git rebase'
-alias grbm='git rebase master'
+alias grbm='git rebase main'
+alias grbmr='git rebase master'
 alias grbd='git rebase dev'
 alias grbdp='git rebase develop'
 alias grbdt='git rebase development'
@@ -110,8 +111,6 @@ alias grup='git remote update'
 alias gt='git --no-pager tag'
 alias grp='git rev-parse'
 alias grph='git rev-parse HEAD'
-alias grpm='git rev-parse master'
-alias grpom='git rev-parse origin/master'
 alias grls='git rev-list'
 alias grlsc='git rev-list --count'
 alias gas='echo "Consider --skip-worktree instead!"; git update-index --assume-unchanged'
@@ -140,6 +139,10 @@ alias hgc='hub gist create --browse'
 
 alias branch='git rev-parse --abbrev-ref HEAD'
 alias ref='git rev-parse --short HEAD'
+
+diffs() {
+  git log $1..origin/main --author=cooperka
+}
 
 gcof() {
   if [ $1 ]; then
