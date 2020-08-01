@@ -15,7 +15,7 @@ alias vpnc='open http://timer-tab.com && vpn connect'
 
 # --- Aggie
 
-addpath "$HOME/sdks/mongodb-2.6.12/bin"
+# addpath "$HOME/sdks/mongodb-2.6.12/bin"
 
 # --- IntelliJ workspaces.
 
