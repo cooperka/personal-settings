@@ -19,9 +19,9 @@ alias vpnc='open http://timer-tab.com && vpn connect'
 
 # --- IntelliJ workspaces.
 
-workspace-backup-collect () {
-    cp ${ODK_COLLECT_DIR}/.idea/workspace{.xml,.xml.bak} && \
-    echo "Saved backup at ${ODK_COLLECT_DIR}/.idea/workspace.xml.bak"
+workspace-backup-collect() {
+  cp ${ODK_COLLECT_DIR}/.idea/workspace{.xml,.xml.bak} && \
+  echo "Saved backup at ${ODK_COLLECT_DIR}/.idea/workspace.xml.bak"
 }
 alias work-bak-odkc=workspace-backup-collect
 
