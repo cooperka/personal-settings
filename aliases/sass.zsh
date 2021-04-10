@@ -1,6 +1,7 @@
 export SASS_DIR=~/dev/sassafras
 export ODK_COLLECT_DIR=${SASS_DIR}/tcc/collect
 export NEMO_DIR=${SASS_DIR}/tcc/nemo
+export HB_DIR=${SASS_DIR}/hollaback
 
 export AWS_DEFAULT_PROFILE=tcc
 
@@ -12,6 +13,11 @@ alias nemos='nvm use && echo "\nCollect endpoint: http://YOURIP:8443/m/yourmissi
 
 # Connect, with reminder to disconnect
 alias vpnc='open http://timer-tab.com && vpn connect'
+
+# --- Hollaback / HeartMob
+
+alias hb='cd ${HB_DIR}/hb-web && nvm use'
+alias hbs='hb && cd trellis && vagrant up && cd ../site/web/app/themes/hollaback-theme && npx gulp build && hb'
 
 # --- Aggie
 
