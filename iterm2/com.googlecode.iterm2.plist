@@ -6,6 +6,8 @@
 	<true/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
+	<key>ApplePressAndHoldEnabled</key>
+	<false/>
 	<key>AppleScrollAnimationEnabled</key>
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
@@ -80,7 +82,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>99 257 1271 540 0 0 1440 877 </string>
+	<string>12 256 1411 557 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 52 1440 825 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -771,7 +773,9 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
+		<string>3.3.9</string>
 		<string>3.2.9</string>
+		<string>3.3.11</string>
 		<string>3.3.7</string>
 	</array>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
@@ -787,12 +791,14 @@
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
+	<key>NoSyncHaveUsedCopyMode</key>
+	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>C9BA6A47-4CBE-4578-B414-73EB821CBAFD</string>
 	<key>NoSyncLastTipTime</key>
 	<real>597278639.64798796</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>1</integer>
+	<integer>25</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1544,6 +1550,8 @@
 	</array>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
+	<key>PasteTabToStringTabStopSize</key>
+	<integer>4</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -1592,8 +1600,10 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-12-19T15:59:56Z</date>
+	<date>2020-08-24T23:58:25Z</date>
 	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
 	<true/>
@@ -1614,6 +1624,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.7</string>
+	<string>3.3.11</string>
 </dict>
 </plist>
