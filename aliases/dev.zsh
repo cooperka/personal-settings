@@ -157,6 +157,10 @@ uninstall() {
   fi
 }
 
+aga() {
+  ag $@ --hidden -a
+}
+
 alias set-date-adb='adb shell "date `date +%m%d%H%M%Y.%S`"'
 alias sda=set-date-adb
 
