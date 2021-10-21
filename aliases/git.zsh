@@ -29,8 +29,9 @@ alias ga='git add'
 alias gaa='git add -A; git add -u; git status'
 alias gaaa=gaa
 alias gc='git commit -v'
-alias gc!='git commit -v --amend'
-alias gc@='git commit -v --amend --no-edit'
+alias gce='git commit -v --allow-empty'
+alias gc!='git commit -v --allow-empty --amend'
+alias gc@='git commit -v --allow-empty --amend --no-edit'
 gcw() {
   # "Work in progress" sort of commit.
   git commit -m "🚧  $@"
