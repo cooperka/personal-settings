@@ -131,6 +131,7 @@ alias gcfg='git config'
 alias gcfgg='git config --global'
 alias gplkc='git pull kc HEAD'
 alias gpskc='git push -f kc HEAD'
+alias recent='git branch --sort=-committerdate | head'
 
 alias hh='hub help'
 alias hb='hub browse'
@@ -179,3 +180,4 @@ git-patch() {
   echo "git am fix.patch # Meaning 'Apply Mailbox', optionally with --signoff (-s)"
 }
 alias patch-git=git-patch
+alias git-prune-branches="echo \"git for-each-ref --format='%(refname:short)' 'refs/heads/foo*' | xargs git branch -D # Remove any local branch starting with 'foo'; or replace foo* with foo/** to delete any branch under the foo directory.\""
