@@ -1,3 +1,5 @@
+export SETTINGS_REPO_DIR="$HOME/dev/personal/personal-settings"
+
 # Echo to stderr.
 echoerr() {
   cat <<< "$@" 1>&2

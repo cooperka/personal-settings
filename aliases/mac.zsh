@@ -9,3 +9,5 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 
 # `brew install coreutils` first.
 alias readlink=greadlink
+
+alias benchmark='$SETTINGS_REPO_DIR/aliases/benchmark.sh'
