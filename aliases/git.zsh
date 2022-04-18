@@ -7,7 +7,6 @@
 #
 alias g='git'
 alias gst='git status'
-alias gh='git help'
 alias gl='git log'
 alias glp='git log --patch'
 alias gld='git log --pretty=fuller `# Show commit date along with author date`'
@@ -133,6 +132,8 @@ alias gplkc='git pull kc HEAD'
 alias gpskc='git push -f kc HEAD'
 alias recent='git branch --sort=-committerdate | head'
 
+# alias gh='git help' # Conflicts with `gh` GitHub CLI
+#   See also https://github.com/cli/cli/blob/trunk/docs/gh-vs-hub.md
 alias hh='hub help'
 alias hb='hub browse'
 alias hf='hub fetch'
