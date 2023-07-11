@@ -8,6 +8,9 @@ case $- in
     *) return;;
 esac
 
+# save history "live" instead of only after proper exit.
+export PROMPT_COMMAND='history -a; history -n'
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
