@@ -1,5 +1,12 @@
 export SETTINGS_REPO_DIR="$HOME/dev/personal/personal-settings"
 
+# Additional history configs (on top of default OMZ lib/history.zsh)
+HISTSIZE=500000
+SAVEHIST=100000
+setopt inc_append_history        # Write to the history file immediately, not when the shell exits.
+setopt hist_find_no_dups         # Do not display a line previously found.
+setopt hist_reduce_blanks        # Remove superfluous blanks before recording entry.
+
 # Echo to stderr.
 echoerr() {
   cat <<< "$@" 1>&2
