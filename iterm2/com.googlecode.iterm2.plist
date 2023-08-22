@@ -12,6 +12,8 @@
 	<string>test</string>
 	<key>Default Bookmark Guid</key>
 	<string>7281B9B5-9F77-404F-86AF-DE3D0D8DA7AE</string>
+	<key>EnableAPIServer</key>
+	<true/>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
@@ -741,6 +743,19 @@
 	<true/>
 	<key>ShowFullScreenTabBar</key>
 	<true/>
+	<key>Snippets</key>
+	<array>
+		<dict>
+			<key>guid</key>
+			<string>DC3C0974-BC37-4111-B158-C04BA4E1FF71</string>
+			<key>title</key>
+			<string>french</string>
+			<key>value</key>
+			<string>french</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>TabStyleWithAutomaticOption</key>
