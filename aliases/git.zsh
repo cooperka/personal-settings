@@ -94,8 +94,8 @@ alias gama='git am --abort'
 alias grm='git rm'
 alias grem='git remote'
 grema() {
-  echo "Use 'hub fetch $1' instead"
-  return
+  #echo "Use 'hub fetch $1' instead" # No longer works in 2023?
+  #return
 
   local repo
   if [ -z $2 ]; then
