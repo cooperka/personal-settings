@@ -5,7 +5,8 @@ source "$HOME/.cargo/env"
 export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk-11.0.13.jdk/Contents/Home'
 
 # Major speedup + don't break old dependencies
-export HOMEBREW_NO_AUTO_UPDATE=1
+# Note: This was discouraged in brew v4 and shouldn't be needed anymore.
+#export HOMEBREW_NO_AUTO_UPDATE=1
 
 # `brew install coreutils` first.
 alias readlink=greadlink
