@@ -9,7 +9,15 @@
 #export HOMEBREW_NO_AUTO_UPDATE=1
 
 # Old homebrew location before moving to M1 /opt/homebrew/bin
-alias oldbrew=/usr/local/bin/brew
+alias oldbrew=/usr/local/bin.old/brew
+
+# Add homebrew to path (for M1)
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Add pythons to path
+export PYENV_ROOT="$HOME/.pyenv"
+addpath "$PYENV_ROOT/bin"
+eval "$(pyenv init -)"
 
 # `brew install coreutils` first.
 alias readlink=greadlink
