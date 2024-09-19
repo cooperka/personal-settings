@@ -8,6 +8,9 @@
 # Note: This was discouraged in brew v4 and shouldn't be needed anymore.
 #export HOMEBREW_NO_AUTO_UPDATE=1
 
+# Old homebrew location before moving to M1 /opt/homebrew/bin
+alias oldbrew=/usr/local/bin/brew
+
 # `brew install coreutils` first.
 alias readlink=greadlink
 
