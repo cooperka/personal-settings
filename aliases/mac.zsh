@@ -1,8 +1,8 @@
-addpath '/Users/klap-hotel/Library/Python/2.7/bin'
-source "$HOME/.cargo/env"
+#addpath '/Users/klap-hotel/Library/Python/2.7/bin'
+#source "$HOME/.cargo/env"
 
 # Default JDK path.
-export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk-11.0.13.jdk/Contents/Home'
+#export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk-11.0.13.jdk/Contents/Home'
 
 # Major speedup + don't break old dependencies
 # Note: This was discouraged in brew v4 and shouldn't be needed anymore.
