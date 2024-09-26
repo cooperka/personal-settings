@@ -16,7 +16,8 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Use homebrew's llvm instead of Mac's
 # (fixes compiler issues with several gems and yarn)
-addpath "/opt/homebrew/opt/llvm/bin"
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH" # Must be FIRST (not last)
+#addpath "/opt/homebrew/opt/llvm/bin"
 export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 
