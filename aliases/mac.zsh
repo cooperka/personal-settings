@@ -14,6 +14,12 @@ alias oldbrew=/usr/local/bin.old/brew
 # Add homebrew to path (for M1)
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# Use homebrew's llvm instead of Mac's
+# (fixes compiler issues with several gems and yarn)
+addpath "/opt/homebrew/opt/llvm/bin"
+export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+
 # Initialize nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
