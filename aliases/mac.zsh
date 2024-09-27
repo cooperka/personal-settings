@@ -18,8 +18,11 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # (fixes compiler issues with several gems and yarn)
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH" # Must be FIRST (not last)
 #addpath "/opt/homebrew/opt/llvm/bin"
-export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+#export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+#export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+export CC="/opt/homebrew/bin/gcc"
+export CXX="/opt/homebrew/bin/g++ -std=c++17"
+export CFLAGS='-std=c++17'
 
 # Initialize nvm
 export NVM_DIR="$HOME/.nvm"
