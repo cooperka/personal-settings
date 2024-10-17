@@ -13,6 +13,7 @@ alias oldbrew=/usr/local/bin.old/brew
 
 # Add homebrew to path (for M1)
 eval "$(/opt/homebrew/bin/brew shellenv)"
+[[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
 
 # Use homebrew's llvm instead of Mac's
 # (fixes compiler issues with several gems and yarn)
