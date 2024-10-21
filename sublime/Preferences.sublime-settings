@@ -1,8 +1,13 @@
 // Settings in here override those in "Default/Preferences.sublime-settings",
-// and are overridden in turn by file type specific settings.
+// and are overridden in turn by syntax-specific settings.
 {
-    // Columns in which to display vertical rulers
-    "rulers": [120],
+    // Sets the colors used within the text area.
+    // The value "auto" will switch between the "light_color_scheme" and
+    // "dark_color_scheme" based on the operating system appearance.
+    "color_scheme": "Monokai.sublime-color-scheme",
+
+    // Columns in which to display vertical rulers.
+    "rulers": [80, 120],
 
     // Set to true to turn spell checking on by default
     "spell_check": true,
@@ -32,8 +37,15 @@
     // you'll need to place this line in your user settings to override it.
     "move_to_limit_on_up_down": true,
 
-    // Set to true to removing trailing white space on save
-    "trim_trailing_white_space_on_save": true,
+    // Controls where trailing white space is removed on save.
+    // - "none": Do not remove any trailing white space on save.
+    // - "all": Remove all trailing white space on save.
+    // - "not_on_caret": Only remove white space that won't affect the caret.
+    //                   When used in conjunction with "save_on_focus_lost" and
+    //                   certain desktop environments that frequently make the
+    //                   application lose focus this avoids the caret jumping
+    //                   around a lot.
+    "trim_trailing_white_space_on_save": "all",
 
     // Set to true to ensure the last line of the file ends in a newline
     // character when saving
@@ -65,8 +77,7 @@
 
     // If true, the selected text will be copied into the find panel when it's
     // shown.
-    // On OS X, this value is overridden in the platform specific settings, so
-    // you'll need to place this line in your user settings to override it.
+    // On Mac, this value is overridden in the platform specific settings.
     "find_selected_text": true,
 
     //
@@ -86,18 +97,47 @@
     // Application Behavior Settings
     //
 
-    // OS X only: When files are opened from finder, or by dragging onto the
-    // dock icon, this controls if a new window is created or not.
-    "open_files_in_new_window": false,
+    // Exiting the application with hot_exit enabled will cause it to close
+    // immediately without prompting. Unsaved modifications and open files will
+    // be preserved and restored when next starting.
+    //
+    // Hot exit has different modes to choose from:
+    // - "always": Always perform a hot exit when the application exits. This
+    //             includes when the last window is closed on relevant
+    //             platforms.
+    // - "only_on_quit": Only perform a hot exit when the application is asked
+    //                   to exit, not when the last window is closed. This
+    //                   setting is only used on Windows and Linux.
+    // - "disabled": Disable hot exit.
+    "hot_exit": "disabled",
+
+    // Closing projects with hot_exit_projects enabled will cause it to close
+    // immediately without prompting. Unsaved modifications and open files will
+    // be preserved in the workspace file and restored when reopened.
+    "hot_exit_projects": false,
+
+    // remember_layout makes Sublime Text start with the same layout it closed
+    // with. Only applies when hot_exit is disabled.
+    "remember_layout": true,
+
+    // When files are opened from a file explorer or from the command line, this
+    // controls whether a new window is created or not.
+    // - "never": Never open a new window unless no window is open.
+    // - "always": Always open files in a new window.
+    // - "finder_only": (macOS only) Only open files in a new window when
+    //                  opening them from finder or dragging onto the dock icon.
+    //
+    // On Mac, this value is overridden in the platform specific settings.
+    "open_files_in_new_window": "never",
 
     // Set to true to close windows as soon as the last file is closed, unless
     // there's a folder open within the window.
-    // On OS X, this value is overridden in the platform specific settings, so
+    // On Mac, this value is overridden in the platform specific settings, so
     // you'll need to place this line in your user settings to override it.
     "close_windows_when_empty": true,
 
-    // Show the full path to files in the title bar.
-    // On OS X, this value is overridden in the platform specific settings, so
-    // you'll need to place this line in your user settings to override it.
+    // Show the full path to files in the title bar. On Mac, this value is
+    // overridden in the platform specific settings, with a default value of
+    // false.
     "show_full_path": true,
 }
