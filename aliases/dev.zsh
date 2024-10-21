@@ -1,10 +1,11 @@
 # --- Exports
 
-addpath "$HOME/sdks/android-sdk/platform-tools"
-addpath "$HOME/sdks/android-sdk/tools"
-addpath "$HOME/sdks/android-sdk/emulator"
-command -v yarn > /dev/null && addpath "`yarn global bin`"
-export ANDROID_HOME="$HOME/sdks/android-sdk"
+# TODO: Add back later.
+# addpath "$HOME/sdks/android-sdk/platform-tools"
+# addpath "$HOME/sdks/android-sdk/tools"
+# addpath "$HOME/sdks/android-sdk/emulator"
+# command -v yarn > /dev/null && addpath "`yarn global bin`"
+# export ANDROID_HOME="$HOME/sdks/android-sdk"
 
 # --- Yarn
 
@@ -104,14 +105,14 @@ alias awsS='aws --profile sassy'
 alias em='yarn run ember'
 
 # @param $1 - The app package name, e.g. 'com.example.app'.
-db-pull() {
-  adb $2 pull "/data/data/$1/databases" ~/Downloads/adb/
-}
+# db-pull() {
+#   adb $2 pull "/data/data/$1/databases" ~/Downloads/adb/
+# }
 
 # @param $1 - The app package name, e.g. 'com.example.app'.
-db-push() {
-  adb $2 push ~/Downloads/adb/databases/RKStorage* "/data/data/$1/databases/"
-}
+# db-push() {
+#   adb $2 push ~/Downloads/adb/databases/RKStorage* "/data/data/$1/databases/"
+#}
 
 # --- Neo4j
 

@@ -1,4 +1,5 @@
 export SETTINGS_REPO_DIR="$HOME/dev/personal/personal-settings"
+alias pers="cd $SETTINGS_REPO_DIR"
 
 # Additional history configs (on top of default OMZ lib/history.zsh)
 HISTSIZE=500000

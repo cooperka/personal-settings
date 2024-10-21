@@ -1,4 +1,4 @@
-addpath '/Users/klap-hotel/.safe/cli'
+#addpath "$HOME/.safe/cli"
 
 export SAFENET_DIR=~/dev/safenet
 

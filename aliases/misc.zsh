@@ -35,12 +35,12 @@ pull-aliases() {
   cd ~/dev/personal-settings/aliases
   pwd
   gpl
-  cd ~/dev/cribspot/cribspot-aliases
-  pwd
-  gpl
-  cd ~/dev/wecount/wecount-aliases
-  pwd
-  gpl
+  # cd ~/dev/cribspot/cribspot-aliases
+  # pwd
+  # gpl
+  # cd ~/dev/wecount/wecount-aliases
+  # pwd
+  # gpl
   cd ${TEMP}
 }
 alias pla='pull-aliases'
@@ -53,25 +53,25 @@ alias v='xclip -o'
 
 # --- Security
 
-share() {
-  pbpaste > /tmp/secret.txt
-  echo "Uploading: `cat /tmp/secret.txt`"
-  ffsend upload /tmp/secret.txt --copy -d 1 -e $1 ${@:2:99}
-}
-alias share5m='share 5m'
-alias share1d='share 1d'
-alias sharePass='share1d --password'
+# share() {
+#   pbpaste > /tmp/secret.txt
+#   echo "Uploading: `cat /tmp/secret.txt`"
+#   ffsend upload /tmp/secret.txt --copy -d 1 -e $1 ${@:2:99}
+# }
+# alias share5m='share 5m'
+# alias share1d='share 1d'
+# alias sharePass='share1d --password'
 
 # --- Misc.
 
-alias get-ip='ipconfig getifaddr en0 | pbcopy && echo "Copied."'
+alias get-ip='ipconfig getifaddr en0'
 
 # --- Memory jogs
 
 alias lines='echo "cat -n FILE"'
 alias fix-monitor='echo "http://www.ireckon.net/2013/03/force-rgb-mode-in-mac-os-x-to-fix-the-picture-quality-of-an-external-monitor"; echo "/System/Library/Displays/Overrides/DisplayVendorID-469/DisplayProductID-22fd"'
 alias fix-eclipse='echo "rm ~/dev/Workspaces/EclipseAndroid/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi"'
-alias fix-xcode='echo "rm -rf /Users/klap-hotel/Library/Developer/Xcode/DerivedData"'
+alias fix-xcode='echo "rm -rf $HOME/Library/Developer/Xcode/DerivedData"'
 ios-dir() {
   echo 'Pause simulator, then `po NSHomeDirectory()`'
 }

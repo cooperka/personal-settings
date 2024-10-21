@@ -19,15 +19,6 @@ alias vpnc='open http://timer-tab.com && vpn connect'
 
 alias rr='cd ${RR_DIR}'
 
-# --- Hollaback / HeartMob
-
-alias hb='cd ${HB_DIR}/hb-web && nvm use'
-alias hbs='hb && cd trellis && vagrant up && cd ../site/web/app/themes/hollaback-theme && npx gulp build && hb'
-
-# --- Aggie
-
-# addpath "$HOME/sdks/mongodb-2.6.12/bin"
-
 # --- IntelliJ workspaces.
 
 workspace-backup-collect() {
