@@ -97,29 +97,6 @@
     // Application Behavior Settings
     //
 
-    // Exiting the application with hot_exit enabled will cause it to close
-    // immediately without prompting. Unsaved modifications and open files will
-    // be preserved and restored when next starting.
-    //
-    // Hot exit has different modes to choose from:
-    // - "always": Always perform a hot exit when the application exits. This
-    //             includes when the last window is closed on relevant
-    //             platforms.
-    // - "only_on_quit": Only perform a hot exit when the application is asked
-    //                   to exit, not when the last window is closed. This
-    //                   setting is only used on Windows and Linux.
-    // - "disabled": Disable hot exit.
-    "hot_exit": "disabled",
-
-    // Closing projects with hot_exit_projects enabled will cause it to close
-    // immediately without prompting. Unsaved modifications and open files will
-    // be preserved in the workspace file and restored when reopened.
-    "hot_exit_projects": false,
-
-    // remember_layout makes Sublime Text start with the same layout it closed
-    // with. Only applies when hot_exit is disabled.
-    "remember_layout": true,
-
     // When files are opened from a file explorer or from the command line, this
     // controls whether a new window is created or not.
     // - "never": Never open a new window unless no window is open.
