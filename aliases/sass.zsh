@@ -21,14 +21,11 @@ alias rr='cd ${RR_DIR}'
 
 # --- IntelliJ workspaces.
 
-workspace-backup-collect() {
-  cp ${ODK_COLLECT_DIR}/.idea/workspace{.xml,.xml.bak} && \
-  echo "Saved backup at ${ODK_COLLECT_DIR}/.idea/workspace.xml.bak"
+workspace-backup() {
+  echo "Tools | Tasks & Contexts | Save Context..."
 }
-alias work-bak-odkc=workspace-backup-collect
+alias work-bak=workspace-backup
 
-workspace-restore-collect() {
-  cp ${ODK_COLLECT_DIR}/.idea/workspace{.xml.bak,.xml} && \
-  echo "Restored backup from ${ODK_COLLECT_DIR}/.idea/workspace.xml.bak"
+workspace-restore() {
+  echo "Tools | Tasks & Contexts | Load Context..."
 }
-alias work-restore-odkc=workspace-restore-collect
